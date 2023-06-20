@@ -1,4 +1,3 @@
-idx: 450
 erasor: 
     max_range: 80.0
     num_rings: 20
@@ -17,17 +16,13 @@ erasor:
 
 
 MapUpdater:
-    data_type: "02"
-    initial_map_path: "/media/shapelim/UX960NVMe1/kitti_semantic/semantic_KITTI_map/src_0_2/02_860_to_950_w_interval2_voxel_0.200000.pcd"
-    env: "outdoor"
-    save_path: "/media/shapelim/UX960NVMe1/kitti_semantic/semantic_KITTI_map/erasor_v2"
-    query_voxel_size: 0.2
-    map_voxel_size: 0.2  
+    query_voxel_size: 0.1
+    map_voxel_size: 0.1
     voxelization_interval: 10
     removal_interval: 5
 
 tf:
      lidar2body: [0.0, 0.0, 1.73, 0, 0.0, 0.0, 1.0] # xyz q_x, q_y, q_z, q_w in order
 
-verbose: true
+verbose: false # debug print log etc
 

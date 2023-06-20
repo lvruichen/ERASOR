@@ -16,13 +16,22 @@ erasor:
 
 
 MapUpdater:
-    query_voxel_size: 0.1
-    map_voxel_size: 0.1 
+    query_voxel_size: 0.3
+    map_voxel_size: 0.3
     voxelization_interval: 2
     removal_interval: 4
 
 tf:
-     lidar2body: [0.0, 0.0, 1.73, 0, 0.0, 0.0, 1.0] # xyz q_x, q_y, q_z, q_w in order
+     lidar2body: [0.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0] # xyz q_x, q_y, q_z, q_w in order
 
 verbose: false # debug print log etc
 
+isScanFileKITTIFormat: false
+leafSize: 0.25
+sequence_scan_dir: "/home/eric/data/haomo/xmt_0613/point_lio/keyframes/"
+sequence_pose_path: "/home/eric/data/haomo/xmt_0613/loop/update_pose.txt"
+# sequence_scan_dir: "/home/eric/data/erasor/00/velodyne/"
+# sequence_pose_path: "/home/eric/data/erasor/00/pose.txt"
+save_pcd_folder: "/home/eric/a_ros_ws/erasor_lrc_ws/src/ERASOR/file/"
+start_idx: 0
+end_idx: 500
