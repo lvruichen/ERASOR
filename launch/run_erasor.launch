@@ -7,22 +7,21 @@
 <node name="rviz" pkg="rviz" type="rviz" args="-d $(find erasor)/rviz/erasor_map.rviz"/>
 <node name="rviz_body" pkg="rviz" type="rviz" args="-d $(find erasor)/rviz/srt.rviz"/>
 
-<arg name="target_seq" default="05"/>
-<group if="$(eval arg('target_seq') ==00)">
+<arg name="target_seq" default="7"/>
+<group if="$(eval arg('target_seq') == 0)">
     <rosparam command="load" file="$(find erasor)/config/seq_00.yaml" />
 </group>
-<group if="$(eval arg('target_seq') ==01)">
+<group if="$(eval arg('target_seq') ==1)">
     <rosparam command="load" file="$(find erasor)/config/seq_01.yaml" />
 </group>
-<group if="$(eval arg('target_seq') ==02)">
+<group if="$(eval arg('target_seq') ==2)">
     <rosparam command="load" file="$(find erasor)/config/seq_02.yaml" />
 </group>
-<group if="$(eval arg('target_seq') ==05)">
+<group if="$(eval arg('target_seq') ==5)">
     <rosparam command="load" file="$(find erasor)/config/seq_05.yaml" />
 </group>
-<group if="$(eval arg('target_seq') ==07)">
+<group if="$(eval arg('target_seq') ==7)">
     <rosparam command="load" file="$(find erasor)/config/seq_07.yaml" />
 </group>
-
 
 </launch>

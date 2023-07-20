@@ -2,8 +2,8 @@
 
 <node name="kitti_mapgen" pkg="erasor" type="kitti_mapgen" output="screen">
     <rosparam param="/map/voxelsize">0.2</rosparam>		
-    <rosparam param="/map/target_rosbag">"05_2350_to_2670_w_interval_2_node.bag"</rosparam>
-    <rosparam param="/map/save_path">"/media/shapelim/UX960NVMe1/deep_express/kitti_rosbag"</rosparam>
+    <rosparam param="/map/target_rosbag">"07_630_to_820_w_interval_2_node.bag"</rosparam>
+    <rosparam param="/map/save_path">"/home/eric/data/erasor/07"</rosparam>
     <rosparam param="/map/viz_interval">1</rosparam>
     <rosparam param="/large_scale/is_large_scale">true</rosparam>
 </node>

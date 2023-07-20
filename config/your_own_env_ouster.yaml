@@ -15,18 +15,18 @@ erasor:
     version: 3 # 2: R-GPF / 3: R-GPF w/ blocking (not in paper)
 
 MapUpdater:
-    data_name: "bucheon"
-    initial_map_path: "/media/shapelim/UX960NVMe1/deep_express/LIO-SAM/bucheon/dense_global_map.pcd"
+    data_name: "LVIO_erasor"
+    initial_map_path: "/home/eric/tmp/OriginalNoisyMapGlobal.pcd"
     env: "outdoor"
-    save_path: "/media/shapelim/UX960NVMe1/deep_express/LIO-SAM/bucheon/output"
+    save_path: "/home/eric/tmp"
     query_voxel_size: 0.2
     map_voxel_size: 0.2  
     voxelization_interval: 2
-    removal_interval: 4
+    removal_interval: 10
 
 # For mapgen
-data_dir: "/media/shapelim/UX960NVMe1/deep_express/LIO-SAM/bucheon"
-init_idx: 130
+data_dir: "/home/eric/data/LVIO/slam"
+init_idx: 0
 interval: 2
 
 tf:
